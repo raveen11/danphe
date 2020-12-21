@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var num=[];
+        for (var i=1;i<101;i++){
+            console.log(i);
+            num.push(i)
+
+        }
+        console.log(num)
+        for(var i=0;i<num.length;i++){
+             if((num[i]%3==0) && (num[i]%5==0)){
+                num.splice(i,1,"FizzBuzz")
+            }
+            if(num[i]%3==0){
+                num.splice(i,1,"Fizz")
+            }
+            if (num[i]%5==0){
+                num.splice(i,1,"Buzz")
+
+            }
+        }
+
+    </script>
+</head>
+<body>
+    Everything is in Console
+</body>
+</html>

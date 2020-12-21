@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Block</title>
+    <style>
+    
+    @media(min-width: 600px) {
+        .main{
+            margin: 0;
+        }
+        
+        .block{
+            height: 300px;
+            width: 500px;
+            background-color: blue;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 25vh;
+            margin-bottom: 25vh;
+        }
+    }
+        @media(max-width: 600px) {
+            .main{
+                width: 100%;
+                margin: 0;
+                margin-top: 25vh;
+                margin-bottom: 25vh;
+            }
+            .block{
+                height: 300px;
+                width: 100%;
+                background-color: rgb(14, 14, 22);
+            }
+        }
+        </style>
+</head>
+<body>
+    <div class="main">
+        
+    <div class="block"></div>  
+    </div>  
+</body>
+</html>
